@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'character_count/version'
+require 'charcount/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "character_count"
-  spec.version       = CharacterCount::VERSION
+  spec.name          = "charcount"
+  spec.version       = Charcount::VERSION
   spec.authors       = ["Burak Tokgöz"]
   spec.email         = ["btok900@gmail.com"]
 
@@ -34,4 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "thor", "~> 0.19.4"
+  spec.add_development_dependency "cucumber"
+  spec.add_development_dependency "aruba"
 end
